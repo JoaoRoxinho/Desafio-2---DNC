@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h2>DncWeather</h2>
+            <ul id="navbar-items">
+                <li><a href="#">Endereços</a></li>
+                <li><a href="#">Previsão do tempo</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="showcase">
+        <div id="showcase-container">
+            <h1>Descubra Mais com Precisão:<br>Previsões do Tempo e endereços<br>em tempo real.</h1>
+            <img src="/images/cloud-top.svg" alt="Cloud-Top" id="cloud-top">
+        </div>
+    </header>
+
+    <section id="form">
+        <!-- Em action é o site destino onde os dados irão ser armazenados -->
+        <form action="" method="post">
+            <label for="nome">Primeiro Nome:</label><br>
+            <input type="text" id="nome" class="input-width" name="nome" placeholder="Insira seu primeiro nome:"><br>
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" class="input-width" name="email" placeholder="Insira seu e-mail"><br>
+
+            <label for="CEP-input">Digite o CEP:</label><br>
+            <input type="text" id="CEP-input" class="input-width" name="CEP-form" placeholder="Insira o CEP" maxlength="8" required><br>
+
+            <label for="lat-long">Digite a latitude e longitude para saber a previsão:</label><br>
+            <input type="text" id="latitude" name="latitude" placeholder="Latitude">
+            <input type="text" id="longitude" name="longitude" placeholder="Longitude"><br><br>
+
+            <input type="submit" value="Acessar" id="btn-form">
+        </form>
+    </section>
+
+    <section id="cep-output1">
+        <div id="cep-output1-container">
+            <h2>Resultado da busca por CEP:</h2>
+            <img src="/images/ping-cep.svg" alt="Ping CEP" id="ping-cep">
+        </div>
+        <div id="cep-container">
+            <div id="cep-container-top">
+                <p>Logradouro/nome</p>
+                <p>Bairro/Distrito</p>
+                <p>Localidade/UF</p>
+                <p></p>
+            </div>
+            <div id="cep-container-bottom">
+                <p id="adress-output">Justino Cobra</p>
+                <p id="bairro-output">Vila Ema</p>
+                <p id="estado-output">SP</p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <section id="cep-output2">
+        <div id="cep-output2-container">
+            <h2>Previsão do tempo na região:</h2>
+            <img src="/images/cloud-bottom.svg" alt="cloud-bottom" id="cloud-bottom">
+        </div>
+        <div id="cep-output2-celsius">
+            <p>Previsão de tempo de acordo com a região: <span id="weather-output">24°C</span></p>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-container">
+            <a href="#">Termos de Uso</a>
+            <p> | </p>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+</body>
+<script src="/index.js"></script>
+</html>

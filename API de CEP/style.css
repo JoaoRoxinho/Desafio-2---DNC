@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    height: 70px;
+    background-color: #0C70F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#navbar-container h2 {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#navbar-items {
+    display: flex;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+#navbar-items li {
+    margin-right: 20px;
+}
+
+#navbar-items li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Showcase */
+
+#showcase-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    font-weight: bolder;
+}
+
+#cloud-top {
+    width: 197px;
+    margin-left: 40px;
+    margin-top: -80px;
+}
+
+/* Form */
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#form label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input {
+    border: none;
+    margin: 20px 0 25px 0;
+    padding: 5px 0 5px 12px;
+}
+
+.input-width {
+    width: 100%;
+}
+
+#btn-form {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #0C70F2E5;
+    box-shadow: 0px 6px 4px 0px #0C70F240;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Resultado CEP */
+
+#cep-output1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 20px 0;
+}
+
+#cep-output1-container h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+#ping-cep {
+    width: 106px;
+}
+
+#cep-container {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#cep-container-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0C70F2;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px 60px 20px 50px;
+}
+
+#cep-container-bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 60px 20px 50px;
+}
+
+/* Previsão do tempo */
+
+#cep-output2 {
+    margin: 130px 0;
+}
+
+#cep-output2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cep-output2-container h2 {
+    padding-top: 25px;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+#cloud-bottom{
+    width: 120px;
+    margin-left: 20px;
+}
+
+#cep-output2-celsius {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 50%;
+    border: solid 1px #0C70F2;
+    border-radius: 30px;
+    padding: 15px 0;
+}
+
+#cep-output2-celsius p {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+
+#footer-container {
+    display: flex;
+    justify-content: end;
+    background-color: #0C70F2;
+    color: white;
+    padding: 20px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#footer-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#footer-container p {
+    padding-left: 10px; /* Ajuste o valor conforme necessário */
+    padding-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* SCRIPT */
+
+.error {
+    border: 2px solid red;
+    font-weight: bold;
+}
